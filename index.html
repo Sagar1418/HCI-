@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOAA | IIT Kanpur</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Loading Animation -->
+    <div class="loading-screen" aria-live="polite">
+        <div class="loader" role="status" aria-label="Loading"></div>
+        <p>Loading, please wait...</p>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo"><img src="logo.png" alt="IITK DOAA Logo"></a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">Academics ▾</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="none"><a href="#" role="menuitem">Undergraduate Programs</a></li>
+                            <li role="none"><a href="#" role="menuitem">Postgraduate Programs</a></li>
+                            <li role="none"><a href="#" role="menuitem">Master Programs</a></li>
+                            <li role="none"><a href="#" role="menuitem">eMasters & Online Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" aria-haspopup="true" aria-expanded="false">Student Resources ▾</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="none"><a href="#" role="menuitem">Academic Calendar</a></li>
+                            <li role="none"><a href="#" role="menuitem">Course Registration</a></li>
+                            <li role="none"><a href="#" role="menuitem">Examinations & Grading</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Faculty Resources</a></li>
+                    <li><a href="#">Policies & Regulations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search, Dark Mode, and Chatbot -->
+            <div class="header-icons">
+                <label for="search" class="visually-hidden">Search</label>
+                <input type="text" id="search" placeholder="🔍 Search..." aria-label="Search">
+                <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+                <button id="chatbotToggle" aria-label="Open Chatbot">💬</button>
+                <div class="menu-toggle" aria-label="Menu" tabindex="0">&#9776;</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dean of Academic Affairs</h1>
+            <p>Ensuring academic excellence at IIT Kanpur.</p>
+            <a href="#announcements-section" class="btn" id="exploreBtn">Explore</a>
+        </div>
+    </section>
+
+    <!-- Latest Announcements Section -->
+    <section class="announcements-section container" id="announcements-section">
+        <h2>Latest Announcements</h2>
+        <div class="announcements" role="region" aria-label="Latest Announcements">
+            <ul class="announcements-list">
+                <li>⚡ Course Registration Open</li>
+                <li>🏆 Convocation 2024 Announced</li>
+                <li>📅 Academic Calendar Updated</li>
+                <li>🎓 Research Opportunities Available</li>
+            </ul>
+            <button class="announcement-control" aria-label="Pause Announcements">Pause</button>
+        </div>
+    </section>
+
+    <!-- Upcoming Events & News Section -->
+    <section class="upcoming-events-news container">
+        <h2>Upcoming Events & News</h2>
+        <div class="events-news-grid grid">
+            <div class="event-item">
+                <h3>Annual Tech Fest</h3>
+                <p>Participate in IITK's Annual Technology Festival featuring workshops, competitions, and exhibitions.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="event-item">
+                <h3>Faculty Development Workshop</h3>
+                <p>Enhancing teaching methodologies at IITK through our Faculty Development Workshop.</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+            <div class="event-item">
+                <h3>Research Symposium</h3>
+                <p>Showcase your research findings at the upcoming symposium.</p>
+                <a href="#" class="btn">Register</a>
+            </div>
+            <!-- Add more event items as needed -->
+        </div>
+    </section>
+
+<!-- Quick Access Section -->
+<section class="quick-access container">
+    <h2>Quick Access</h2>
+    <div class="quick-access-grid grid">
+        <a href="#" class="quick-link">Academic Calendar</a>
+        <a href="#" class="quick-link">Course Registration</a>
+        <a href="#" class="quick-link">Examination Schedule</a>
+        <a href="#" class="quick-link">Faculty Guidelines</a>
+        <a href="#" class="quick-link">Grade Portal</a>
+        <a href="#" class="quick-link">Resource Library</a>
+        <a href="#" class="quick-link">Messaging System</a>
+        <a href="#" class="quick-link">User Profile</a>
+    </div>
+</section>
+
+<section class="academic-calendar">
+    <!-- Calendar Header with Dummy Month Navigation -->
+    <div class="calendar-header">
+      <button class="nav-btn prev-month" aria-label="Previous Month">&#10094;</button>
+      <span class="month-year">May 2025</span>
+      <button class="nav-btn next-month" aria-label="Next Month">&#10095;</button>
+    </div>
+    
+    <!-- Dummy Interactive Calendar Table with Color-coded Events -->
+    <table class="dummy-calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- First row: UG Admission from day 1 to day 3  -->
+        <tr>
+          <td 
+            data-date="2025-05-01"
+            data-event="UG Admission"
+            data-event-type="start"
+            data-event-color="pink"
+          >
+            1 
+            <div class="event-tag" style="background-color: pink;">
+              UG Start
+            </div>
+          </td>
+          <td data-date="2025-05-02">2</td>
+          <td 
+            data-date="2025-05-03"
+            data-event="UG Admission"
+            data-event-type="end"
+            data-event-color="pink"
+          >
+            3
+            <div class="event-tag" style="background-color: pink;">
+              UG End
+            </div>
+          </td>
+          <td data-date="2025-05-04">4</td>
+          <td data-date="2025-05-05">5</td>
+          <td data-date="2025-05-06">6</td>
+          <td data-date="2025-05-07">7</td>
+        </tr>
+        
+        <!-- Second row: Course Add from day 9 to day 10, Course Drop from day 12 to 13 -->
+        <tr>
+          <td data-date="2025-05-08">8</td>
+          <td 
+            data-date="2025-05-09"
+            data-event="Course Add"
+            data-event-type="start"
+            data-event-color="lightgreen"
+          >
+            9
+            <div class="event-tag" style="background-color: lightgreen;">
+              Add Start
+            </div>
+          </td>
+          <td 
+            data-date="2025-05-10"
+            data-event="Course Add"
+            data-event-type="end"
+            data-event-color="lightgreen"
+          >
+            10
+            <div class="event-tag" style="background-color: lightgreen;">
+              Add End
+            </div>
+          </td>
+          <td data-date="2025-05-11">11</td>
+          <td 
+            data-date="2025-05-12"
+            data-event="Course Drop"
+            data-event-type="start"
+            data-event-color="lightcoral"
+          >
+            12
+            <div class="event-tag" style="background-color: lightcoral;">
+              Drop Start
+            </div>
+          </td>
+          <td 
+            data-date="2025-05-13"
+            data-event="Course Drop"
+            data-event-type="end"
+            data-event-color="lightcoral"
+          >
+            13
+            <div class="event-tag" style="background-color: lightcoral;">
+              Drop End
+            </div>
+          </td>
+          <td data-date="2025-05-14">14</td>
+        </tr>
+        
+        <!-- Third row: PG Admission from day 20 to 22 -->
+        <tr>
+          <td data-date="2025-05-15">15</td>
+          <td data-date="2025-05-16">16</td>
+          <td data-date="2025-05-17">17</td>
+          <td data-date="2025-05-18">18</td>
+          <td data-date="2025-05-19">19</td>
+          <td 
+            data-date="2025-05-20"
+            data-event="PG Admission"
+            data-event-type="start"
+            data-event-color="skyblue"
+          >
+            20
+            <div class="event-tag" style="background-color: skyblue;">
+              PG Start
+            </div>
+          </td>
+          <td data-date="2025-05-21">21</td>
+        </tr>
+        <tr>
+          <td 
+            data-date="2025-05-22"
+            data-event="PG Admission"
+            data-event-type="end"
+            data-event-color="skyblue"
+          >
+            22
+            <div class="event-tag" style="background-color: skyblue;">
+              PG End
+            </div>
+          </td>
+          <td data-date="2025-05-23">23</td>
+          <td data-date="2025-05-24">24</td>
+          <td data-date="2025-05-25">25</td>
+          <td data-date="2025-05-26">26</td>
+          <td data-date="2025-05-27">27</td>
+          <td data-date="2025-05-28">28</td>
+        </tr>
+        <tr>
+          <td data-date="2025-05-29">29</td>
+          <td data-date="2025-05-30">30</td>
+          <td data-date="2025-05-31">31</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Display the selected date and event details -->
+    <p id="selectedDate"></p>
+</section>
+
+    <!-- Messaging System Section -->
+    <section class="messaging-system container">
+        <h2>Messaging System</h2>
+        <div class="messaging-container">
+            <div class="messages">
+                <div class="message received">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+                <div class="message sent">
+                    <p>I have a question about course registration.</p>
+                </div>
+                <!-- Additional messages will appear here -->
+            </div>
+            <form id="messageForm" aria-label="Messaging Form">
+                <input type="text" id="messageInput" placeholder="Type your message..." aria-label="Message Input" required>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <!-- Chatbot Modal -->
+    <div id="chatbotModal" class="chatbot-modal" aria-hidden="true">
+        <div class="chatbot-content">
+            <span class="close-chatbot" id="closeChatbot" aria-label="Close Chatbot">&times;</span>
+            <h2>Chat with DOAA Bot</h2>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">Hello! How can I assist you today?</div>
+                <!-- Bot and user messages will appear here -->
+            </div>
+            <form id="chatbotForm" aria-label="Chatbot Form">
+                <input type="text" id="chatbotInput" placeholder="Type your message..." aria-label="Chatbot Input" required>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:doaa@iitk.ac.in">doaa@iitk.ac.in</a></p>
+            <p>Phone: +91-512-259-1234</p>
+            <p>Location: IIT Kanpur, Uttar Pradesh, India</p>
+
+            <!-- Contact Form -->
+            <form id="contactForm" aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-required="true" rows="5" placeholder="Your message..."></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IIT Kanpur | Dean of Academic Affairs</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><img src="in.png" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="T.png" alt="Twitter"></a>
+                <a href="#" aria-label="LinkedIn"><img src="LI.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
